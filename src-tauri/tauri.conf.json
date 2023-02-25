@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "PrintLine",
+    "productName": "日结打印",
     "version": "0.0.0"
   },
   "tauri": {

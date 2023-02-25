@@ -31,8 +31,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libgtk-3-dev webkit2gtk-4.0 libappindicator3-dev librsvg2-dev patchelf
+          npm install pnpm -g
  
-      - run: yarn
+      - run: pnpm
  
       - name: Build Tauri
         uses: tauri-apps/tauri-action@v0
@@ -55,9 +56,9 @@ jobs:
         with:
           node-version: 16
  
-      - run: yarn
+      - run: pnpm
  
       - name: Create Update
-        run: yarn update
+        run: pnpm update
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

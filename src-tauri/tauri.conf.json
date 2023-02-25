@@ -76,7 +76,12 @@
       "csp": null
     },
     "updater": {
-      "active": false
+      "active": true,
+      "endpoints": [
+        "https://github.com/wangrui19970405/printTauri/releases/download/updater/update.json"
+      ],
+      "dialog": false,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDczNkEyRUEyREVBRjg3RDQKUldUVWg2L2VvaTVxYzh3VlpxeHNKTmFjZzFrVlBzeWpOdkI0UDFPSjlmc3lLRktjeHVuSitLME4K"
     },
     "windows": [
       {
